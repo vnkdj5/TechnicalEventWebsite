@@ -1,0 +1,152 @@
+/* Overlay style */
+.overlay-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,91,144,0.95);
+  z-index: 500;
+}
+
+/* Overlay closing cross */
+.overlay-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url("../img/common/cross.png") no-repeat center center;
+  background-size: 30px 30px;
+  text-indent: -99999px;
+  color: transparent;
+  outline: none;
+  z-index: 508;
+  cursor: pointer;
+  position: relative;
+  float: right;
+}
+
+/* Menu style */
+.overlay-menu nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.overlay-menu a.button.blue {
+  background-color: #287eb7;
+}
+.overlay-menu a.button {
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+}
+.overlay-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay-menu ul li {
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+.overlay-menu ul li:last-child  {
+  border:0;
+}
+
+.overlay-menu ul li a {
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+  text-transform: uppercase;
+  font-family: 'gothamlight', Arial;
+  word-spacing: .25em;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 12px 0;
+}
+.overlay-menu ul li a.small {
+  font-size: 28px;
+  line-height: 30px;
+  word-spacing: 0;
+}
+
+.overlay-menu ul li a:hover,
+.overlay-menu ul li a:focus {
+  color: #000000;
+}
+
+/* Effects */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  -ms-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  -ms-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  -ms-transition: -ms-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  -ms-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+.overlay-menu nav {
+  height: 70%;
+  font-size: 34px;
+}
+.overlay-menu ul li {
+  min-height: 34px;
+}

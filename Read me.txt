@@ -1,0 +1,26 @@
+Steps for installation:
+
+1. Install wamp server
+2. Go to URL : http://localhost/phpmyadmin
+3. Create database as "credenz"
+4. Click on "credenz" to select database.
+5. Click on IMPORT option to inpoer tables.
+	Select "credenz.sql" from db folder.
+	And Import IT
+6. Copy ALL WEBSITE Files to C:\wamp\www folder 
+
+7. Goto URL localhost to view Our SIte
+
+For admin Panel:
+Enter URL:
+http://localhost/credenz/admin/login.php
+
+Enter Username: admin
+password: admin
+
+Tou can view Students' Registations here-collegewise,studentwise.
+
+For any Queries Contact:
+Kiran Mandhare 7387191080
+Vaibhav Kumbhar: 9890811301
+Amit Shinde:  8421943221

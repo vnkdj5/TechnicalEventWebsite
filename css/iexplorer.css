@@ -1,0 +1,43 @@
+html.ie10 .buildings { top: 225px; }
+html.ie10 .lights { top: 159px; }
+
+/* line 50, /Applications/MAMP/htdocs/CreativeMob_New/sass/home/sections/_services.scss */
+html.ie10 .wave1 {
+  top: 0;
+  background-image: url(../img/home/services/wave1.svg);
+  width: 100%;
+  height: 150px;
+  background-size: 56px 75px;
+  position: absolute;
+  background-position: center top;
+  background-repeat: repeat-x;
+  animation: wave1-anim 3.5s infinite alternate ease-in-out;
+}
+/* line 55, /Applications/MAMP/htdocs/CreativeMob_New/sass/home/sections/_services.scss */
+html.ie10 .wave2 {
+  top: 50px;
+  background-image: url(../img/home/services/wave2.svg);
+  width: 110%;
+  height: 150px;
+  background-size: 56px 75px;
+  position: absolute;
+  background-position: center top;
+  background-repeat: repeat-x;
+  animation: wave2-anim 3.5s infinite alternate ease-in-out;
+}
+/* line 60, /Applications/MAMP/htdocs/CreativeMob_New/sass/home/sections/_services.scss */
+html.ie10 .wave3 {
+  top: 100px;
+  background-image: url(../img/home/services/wave3.svg);
+  width: 110%;
+  height: 150px;
+  background-size: 56px 75px;
+  position: absolute;
+  background-position: center top;
+  background-repeat: repeat-x;
+  animation: wave3-anim 3.5s infinite alternate ease-in-out;
+}
+
+html.ie9 .menu-mobile { display: none; }
+html.ie9 .buildings { top: 225px; }
+html.ie9 .lights { top: 159px; }
